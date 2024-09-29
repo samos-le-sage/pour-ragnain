@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insulte Aléatoire contre un Skaven</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1c1c1c;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            border: 2px solid #ffcc00;
+            background-color: #333;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #ffcc00;
+        }
+
+        button {
+            background-color: #ffcc00;
+            color: #1c1c1c;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff9900;
+        }
+
+        .insulte {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Insulte un Skaven !</h1>
+    <button onclick="genererInsulte()">Générer une Insulte</button>
+    <p class="insulte" id="insulte"></p>
+</div>
+
+<script>
+    const insultes = [
+        "Infâme rat-pouilleur de tunnel !",
+        "Vermine puante de malepierre !",
+        "Traître rampant sans honneur !",
+        "Résidu de couvée dégénérée !",
+        "Créature infecte des égouts !",
+        "Abomination sans foi ni loi !",
+        "Saleté grouillante sans fierté !",
+        "Rongeur infect d’entrailles putrides !",
+        "Sournois lâche à la queue crasseuse !",
+        "Malformation hideuse des tunnels !",
+        "Pustule ambulante à la fourrure moisie !",
+        "Puant rejeton des profondeurs obscures !",
+        "Parodie grotesque d'une bête civilisée !",
+        "Empoisonneur couard aux crocs cariés !",
+        "Misérable rongeur, esclave de la malepierre !",
+        "Traître parmi les traîtres, dégénéré infâme !",
+        "Wadadapprrrrrrrrr, lâche répugnant même parmi les Skavens !",
+        "Wadadapprrrrrrrrr, que ta queue s'étiole et pourrisse dans les tunnels !",
+        "Wadadapprrrrrrrrr, tu n'es qu'une ombre rampante à la gloire ternie !",
+        "Maudit sois-tu, Wadadapprrrrrrrrr, roi des traîtres aux os vermoulus !",
+        "Wadadapprrrrrrrrr, ton nom est synonyme de lâcheté parmi les tiens !",
+        "Wadadapprrrrrrrrr, que tes propres couvées te dévorent !",
+        "Rongeur sans honneur, Wadadapprrrrrrrrr, tu n'as que la trahison à offrir !"
+    ];
+
+    function genererInsulte() {
+        const indexAleatoire = Math.floor(Math.random() * insultes.length);
+        document.getElementById('insulte').textContent = insultes[indexAleatoire];
+    }
+</script>
+
+</body>
+</html>
