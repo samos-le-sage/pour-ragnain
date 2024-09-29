@@ -10,6 +10,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             background-color: #1c1c1c;
             color: white;
@@ -27,6 +28,11 @@
         h1 {
             font-size: 24px;
             color: #ffcc00;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #ff9900;
         }
 
         button {
@@ -49,12 +55,21 @@
             font-weight: bold;
             color: #ffcc00;
         }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Insulte un Skaven !</h1>
+    <h1>Un Cadeau pour Ragnain : La Rancune contre Wadadapprrrrrrrrr !</h1>
+    <img src="https://i.ibb.co/bPZ9tNc/file-s-BBoksg-D8-AYz-IDR8-RVsg-BCBG.png" alt="Dwarf Stomping Skaven">
     <button onclick="genererInsulte()">Générer une Insulte</button>
     <p class="insulte" id="insulte"></p>
 </div>
